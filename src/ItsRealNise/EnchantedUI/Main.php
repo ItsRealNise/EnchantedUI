@@ -1,6 +1,6 @@
 <?php
 
-namespace ItsRealNise\EnchantUI;
+namespace ItsRealNise\EnchantedUI;
 
 use pocketmine\Server;
 use pocketmine\player\Player;
@@ -12,7 +12,7 @@ use pocketmine\item\{
     enchantment\EnchantmentInstance
 };
 use pocketmine\utils\Config;
-use ItsRealNise\EnchantUI\libs\jojoe77777\FormAPI\{
+use ItsRealNise\EnchantedUI\libs\jojoe77777\FormAPI\{
     CustomForm,
     SimpleForm
 };
@@ -20,7 +20,7 @@ use pocketmine\data\bedrock\EnchantmentIdMap;
 use pocketmine\plugin\PluginBase;
 use onebone\economyapi\EconomyAPI;
 use DaPigGuy\PiggyCustomEnchants\CustomEnchants\CustomEnchants;
-use ItsRealNise\EnchantUI\Commands\ShopCommand;
+use ItsRealNise\EnchantedUI\Commands\ShopCommand;
 
 /**
  * Class Main
