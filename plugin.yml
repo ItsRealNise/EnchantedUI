@@ -1,6 +1,6 @@
 ---
-name: EnchantUI
-main: ItsRealNise\EnchantUI\Main
+name: EnchantedUI
+main: ItsRealNise\EnchantedUI\Main
 version: "1.0"
 api: 4.0.0
 load: POSTWORLD
