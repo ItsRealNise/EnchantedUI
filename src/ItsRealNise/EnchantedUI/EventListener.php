@@ -1,10 +1,10 @@
 <?php
 
-namespace ItsRealNise\EnchantUI;
+namespace ItsRealNise\EnchantedUI;
 
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\Listener;
-use pocketmine\Item;
+use pocketmine\item\Item;
 use pocketmine\block\EnchantingTable;
 
 /**
