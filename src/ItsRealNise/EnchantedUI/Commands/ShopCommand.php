@@ -1,5 +1,5 @@
 <?php
-namespace ItsRealNise\EnchantUI\Commands;
+namespace ItsRealNise\EnchantedUI\Commands;
 
 use pocketmine\plugin\Plugin;
 use pocketmine\command\{
