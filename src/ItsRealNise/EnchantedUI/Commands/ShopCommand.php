@@ -9,7 +9,7 @@ use pocketmine\command\{
 };
 use pocketmine\plugin\PluginOwned;
 use pocketmine\Player;
-use ItsRealNise\EnchantUI\Main;
+use ItsRealNise\EnchantedUI\Main;
 
 /**
  * Class ShopCommand
