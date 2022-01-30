@@ -21,6 +21,7 @@ class ShopCommand extends Command implements PluginOwned {
 
     /**
     * ShopCommand constructor.
+    * @param Main $plugin
     */
     public function __construct(Main $plugin){
         parent::__construct("eshop", "Enchant Shop commands", \null, ["eshop"]);
