@@ -20,6 +20,7 @@ use pocketmine\data\bedrock\EnchantmentIdMap;
 use pocketmine\plugin\PluginBase;
 use onebone\economyapi\EconomyAPI;
 use DaPigGuy\PiggyCustomEnchants\CustomEnchants\CustomEnchants;
+use ItsRealNise\EnchantUI\Commands\ShopCommand;
 
 /**
  * Class Main
@@ -38,7 +39,7 @@ class Main extends PluginBase{
         $this->UpdateConfig();
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
-        $this->getServer()->getCommandMap()->register("enchantui", new Commands\ShopCommand($this));
+        $this->getServer()->getCommandMap()->register("enchantui", new ShopCommand($this));
         $this->piggyCE = $this->getServer()->getPluginManager()->getPlugin("PiggyCustomEnchants");
     }
 
