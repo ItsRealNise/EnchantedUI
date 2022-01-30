@@ -17,7 +17,7 @@ use ItsRealNise\EnchantUI\Main;
  */
 class ShopCommand extends Command implements PluginOwned {
 
-    public $plugin;
+    public Main $plugin;
 
     /**
     * ShopCommand constructor.
