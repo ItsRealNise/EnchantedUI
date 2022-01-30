@@ -28,6 +28,9 @@ use ItsRealNise\EnchantUI\Commands\ShopCommand;
  */
 class Main extends PluginBase{
 
+    /** @var Config $shop */
+    public $shop;
+
     public function onEnable(): void{
         if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
             $this->getLogger()->error("in order to use EnchantUI you need to install EconomyAPI.");
