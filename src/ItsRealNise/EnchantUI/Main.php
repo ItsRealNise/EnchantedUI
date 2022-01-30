@@ -32,6 +32,7 @@ class Main extends PluginBase{
     public $shop;
 
     public $piggyCE;
+    public $eco;
 
     public function onEnable(): void{
         if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
@@ -46,6 +47,11 @@ class Main extends PluginBase{
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getCommandMap()->register("enchantui", new ShopCommand($this));
         $this->piggyCE = $this->getServer()->getPluginManager()->getPlugin("PiggyCustomEnchants");
+        $this->eco = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        if($this->eco == null) {
+           $this->getServer()->getPluginManager()->disablePlugins();
+           $this->getServer()->getLogger()->alert("EconomyAPI not found disable the plugins...");
+        }
     }
 
     public function UpdateConfig(): void{
@@ -108,7 +114,7 @@ class Main extends PluginBase{
                 "NAME" => $array[$id]['name'],
                 "PRICE" => $array[$id]['price'] * $data[1],
                 "LEVEL" => $data[1],
-                "MONEY" => EconomyAPI::getInstance()->myMoney($player),
+                "MONEY" => $this->eco->myMoney($player),
                 "INCOMPATIBLE" => $incompatible = $this->isCompatible($player, $array[$id]['incompatible-enchantments'])
             );
             if ($data === null){
