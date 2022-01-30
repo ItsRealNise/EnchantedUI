@@ -1,6 +1,6 @@
 ---
 #Don't Change this
-version: "0.5"
+version: "1.0"
 
 #send EnchantUI to the player when he interacts with the Enchanting-table
 enchanting-table: true
