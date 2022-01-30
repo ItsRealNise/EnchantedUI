@@ -11,6 +11,7 @@ use pocketmine\block\EnchantingTable;
  */
 class EventListener implements Listener{
     
+    /** @var EnchantUI $plugin */
     private $plugin;
     
     /**
