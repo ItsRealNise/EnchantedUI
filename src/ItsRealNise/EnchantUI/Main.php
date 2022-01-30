@@ -132,8 +132,8 @@ class Main extends PluginBase{
             if($data[1] > $array[$id]['max-level'] or $data[1] < 1){
                 return;
             }
-            if(EconomyAPI::getInstance()->myMoney($player) > $c = $array[$id]['price'] * $data[1]){
-                EconomyAPI::getInstance()->reduceMoney($player, $c);
+            if($this->eco->myMoney($player) > $c = $array[$id]['price'] * $data[1]){
+                $this->eco->reduceMoney($player, $c);
                 $this->enchantItem($player, $data[1], $array[$id]['enchantment']);
                 $this->sendNote($player ,$this->shop->getNested('messages.paid-success'), $var);
             }else{
