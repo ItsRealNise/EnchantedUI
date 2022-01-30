@@ -1,10 +1,10 @@
 ---
 name: EnchantUI
-main: UnknownOre\EnchantUI\Main
-version: "0.6"
+main: ItsRealNise\EnchantUI\Main
+version: "1.0"
 api: 4.0.0
 load: POSTWORLD
-author: UnknownOre
+author: ItsRealNise
 permissions:
   eshop.command:
     default: true
