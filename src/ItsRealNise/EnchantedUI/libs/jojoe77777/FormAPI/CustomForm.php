@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace ItsRealNise\EnchantUI\libs\jojoe77777\FormAPI;
+namespace ItsRealNise\EnchantedUI\libs\jojoe77777\FormAPI;
 
 class CustomForm extends Form {
 
