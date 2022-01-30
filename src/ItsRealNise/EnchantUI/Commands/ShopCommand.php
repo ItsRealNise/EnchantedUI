@@ -16,7 +16,10 @@ use ItsRealNise\EnchantUI\Main;
  * @package ItsRealNise\EnchantUI\Commands
  */
 class ShopCommand extends Command implements PluginOwned {
-    
+
+    /** @var Main $plugin */
+    public $plugin;
+
     /**
     * ShopCommand constructor.
     * @param Main $plugin
