@@ -13,7 +13,7 @@ use pocketmine\block\EnchantingTable;
  */
 class EventListener implements Listener{
     
-    private EnchantUI $plugin;
+    private Main $plugin;
     
     public function __construct(Main $plugin){
 		$this->plugin = $plugin;
