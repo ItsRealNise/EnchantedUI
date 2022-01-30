@@ -1,5 +1,7 @@
 <?php
+
 namespace ItsRealNise\EnchantUI;
+
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\Listener;
 use pocketmine\Item;
@@ -11,7 +13,7 @@ use pocketmine\block\EnchantingTable;
  */
 class EventListener implements Listener{
     
-    /** @var EnchantUI $plugin */
+    /** @param EnchantUI $plugin */
     private $plugin;
     
     /**
