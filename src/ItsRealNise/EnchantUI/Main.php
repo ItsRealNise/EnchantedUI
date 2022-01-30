@@ -117,7 +117,7 @@ class Main extends PluginBase{
                 "MONEY" => $this->eco->myMoney($player),
                 "INCOMPATIBLE" => $incompatible = $this->isCompatible($player, $array[$id]['incompatible-enchantments'])
             );
-            if ($data === null){
+            if ($data == null){
                 $this->listForm($player);
                 return;
             }
