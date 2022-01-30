@@ -16,10 +16,6 @@ class EventListener implements Listener{
     /** @param EnchantUI $plugin */
     private $plugin;
     
-    /**
-    * EventListener constructor.
-    * @param EnchantUI $plugin
-    */
     public function __construct(Main $plugin){
 		$this->plugin = $plugin;
 	}
