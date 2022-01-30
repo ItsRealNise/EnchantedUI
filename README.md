@@ -1,4 +1,4 @@
-# EnchantUI
+# EnchantedUI
 A simple enchant shop ui
 
 # Required:
