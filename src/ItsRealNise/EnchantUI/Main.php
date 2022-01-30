@@ -156,7 +156,7 @@ class Main extends PluginBase{
     }
 
     /**
-     * @param Player $Item
+     * @param Player $player
      * @param int $level
      * @param int|String $enchantment
      */
