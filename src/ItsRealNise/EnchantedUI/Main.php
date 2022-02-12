@@ -47,7 +47,7 @@ class Main extends PluginBase{
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getCommandMap()->register("enchantui", new ShopCommand($this));
         $this->piggyCE = $this->getServer()->getPluginManager()->getPlugin("PiggyCustomEnchants");
-        $this->eco = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        $this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
     }
 
     public function UpdateConfig(): void{
